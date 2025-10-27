@@ -69,51 +69,6 @@ async def get_weather_data(city: str) -> dict:
             "condition_description": current['weather'][0]['description'],
         }
 
-# @CITY_SERVER.tool(
-#     title="get_trending_attractions"
-# )      
-# async def get_trending_attractions(city: str) -> dict:
-#         """
-#         This function is used when you need to retrieve trending attractions in a city.
-
-#         Args:
-#             city (str): The city name for which to retrieve trending attractions.
-
-#         Returns:
-#             dict: A dictionary containing trending attractions in the city.
-#         """
-        
-#         client = TavilyClient(api_key=TAVILY_API_KEY)
-#         response = client.search(
-#             query=f"{city} trending attractions",
-#             max_results=5,
-#         )
-        
-#         return response
-
-# @CITY_SERVER.tool(
-#     title="get_time_zone"
-# )
-# async def get_time_zone(city: str) -> dict:
-#     """
-#     This function retrieves the time zone information for a specified city using Tavily's search API.
-
-#     Args:
-#         city (str): The city name for which to retrieve time zone information.
-
-#     Returns:
-#         dict: A dictionary containing time zone information for the city.
-#     """
-    
-#     client = TavilyClient(api_key=TAVILY_API_KEY)
-#     response = client.search(
-#         query=f"{city} time zone",
-#         max_results=1,
-#     )
-    
-#     return response
-
-
 async def main():
     # Use run_async() in async contexts
     await CITY_SERVER.run_async(transport="http", host="0.0.0.0", port=8004, path="/city_server", log_level="debug")
