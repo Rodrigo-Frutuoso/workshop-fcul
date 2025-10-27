@@ -1,6 +1,6 @@
 from typing import Optional
 import os
-from utils.loader import load_dataset
+from helpers.loader import load_dataset
 
 HOTELS_FILENAME = "hotelbookingdata.csv"
 HOTELS_HEADERS = ["addresscountryname", "city_actual", "rating_reviewcount", "center1distance", "center1label", "center2distance", "center2label", "neighbourhood", "price", "price_night", "s_city", "starrating", "rating2_ta", "rating2_ta_reviewcount", "accommodationtype", "guestreviewsrating", "scarce_room", "hotel_id", "offer", "offer_cat", "year", "month", "weekend", "holiday"]

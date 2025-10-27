@@ -1,5 +1,5 @@
 import os
-from utils.loader import load_dataset
+from helpers.loader import load_dataset
 
 HEADERS_ROUTES = ["airline","airline_id","source_airport","source_airport_id","destination_airport","destination_airport_id","codeshare","stops","equipment"]
 FILENAME_ROUTES = "routes.dat"

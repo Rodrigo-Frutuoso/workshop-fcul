@@ -1,5 +1,5 @@
 import os
-from utils.loader import load_dataset
+from helpers.loader import load_dataset
 
 HEADERS_COUNTRIES = ["name","iso_name","dafif_code"]
 FILENAME_COUNTRIES = "countries.dat"

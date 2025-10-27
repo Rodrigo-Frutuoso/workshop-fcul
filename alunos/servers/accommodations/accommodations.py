@@ -7,7 +7,7 @@ SERVER_NAME = "AccommodationsInfoServer"
 ACCOMMODATIONS_INFO_SERVER = FastMCP(name=SERVER_NAME)
 
 # Import dataset helpers
-from servers.accommodations.helpers.airbnbs import (
+from helpers.airbnbs import (
     search_airbnbs_by_city,
     get_airbnbs_by_room_type,
     get_airbnbs_by_price_range,
@@ -16,7 +16,7 @@ from servers.accommodations.helpers.airbnbs import (
     get_available_cities as get_airbnb_cities, 
     get_airbnb_statistics_by_city
 )
-from servers.accommodations.helpers.hotels import (
+from helpers.hotels import (
     search_hotels_by_city,
     search_hotels_by_country,
     get_hotels_by_star_rating,

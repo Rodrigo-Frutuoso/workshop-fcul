@@ -7,11 +7,11 @@ SERVER_NAME = "FlightsInfoServer"
 FLIGHTS_INFO_SERVER = FastMCP(name=SERVER_NAME)
 
 # Import dataset helpers
-from servers.flights.helpers.airports import find_airport_by_iata, search_airports_by_city, list_airports_in_country
-from servers.flights.helpers.airlines import find_airline_by_code, list_airlines_by_country
-from servers.flights.helpers.routes import destinations_from_airport, find_route_paths
-from servers.flights.helpers.planes import find_planes_by_code 
-from servers.flights.helpers.countries import find_country_by_name
+from helpers.airports import find_airport_by_iata, search_airports_by_city, list_airports_in_country
+from helpers.airlines import find_airline_by_code, list_airlines_by_country
+from helpers.routes import destinations_from_airport, find_route_paths
+from helpers.planes import find_planes_by_code 
+from helpers.countries import find_country_by_name
 
 # ===================== Tools =====================
 

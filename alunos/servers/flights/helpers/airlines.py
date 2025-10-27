@@ -1,5 +1,5 @@
 import os
-from utils.loader import load_dataset
+from helpers.loader import load_dataset
 
 HEADERS_AIRLINES = ["airline_id","name","alias","iata","icao","callsign","country","active"]
 FILENAME_AIRLINES = "airlines.dat"

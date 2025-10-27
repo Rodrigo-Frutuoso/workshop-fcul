@@ -1,6 +1,6 @@
 from typing import Optional
 import os
-from utils.loader import load_dataset
+from helpers.loader import load_dataset
 
 AIRBNB_FILENAME = "Aemf1.csv"
 AIRBNB_HEADERS = ["City", "Price", "Day", "Room Type", "Shared Room", "Private Room", "Person Capacity", "Superhost", "Multiple Rooms", "Business", "Cleanliness Rating", "Guest Satisfaction", "Bedrooms", "City Center (km)", "Metro Distance (km)", "Attraction Index", "Normalised Attraction Index", "Restraunt Index", "Normalised Restraunt Index"]

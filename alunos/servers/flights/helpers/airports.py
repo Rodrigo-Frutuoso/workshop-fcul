@@ -1,6 +1,6 @@
 from typing import Optional
 import os
-from utils.loader import load_dataset
+from helpers.loader import load_dataset
 
 HEADERS_AIRPORTS = ["airport_id","name","city","country","iata","icao","latitude","longitude","altitude","timezone","dst","tz_database","type","source"]
 FILENAME_AIRPORTS = "airports.dat"

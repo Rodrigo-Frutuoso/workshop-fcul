@@ -47,13 +47,9 @@ alunos/
 
 O ficheiro de configuração está protegido por password no arquivo `_.env.zip`.
 
-```bash
-# Extrair o ficheiro
-unzip _.env.zip
-
-# Renomear para .env
-mv _.env .env
-```
+1. Descarregue o ficheiro `_.env.zip`.
+2. Extraia o conteúdo utilizando a password fornecida.
+3. Renomeie o ficheiro extraído para `.env`.
 
 > **Nota:** A password para descomprimir o ficheiro deve ser solicitada aos instrutores.
 
@@ -76,10 +72,11 @@ pip install -r requirements.txt
 O ficheiro `.env` deve conter as seguintes variáveis:
 
 ```env
-AZURE_OPENAI_API_KEY=your_api_key_here
-AZURE_OPENAI_ENDPOINT=your_endpoint_here
-AZURE_OPENAI_DEPLOYMENT=your_deployment_name
+AZURE_API_KEY=your_api_key_here
+AZURE_API_BASE=your_endpoint_here
+MODEL_NAME=your_deployment_name
 TAVILY_API_KEY=your_tavily_key_here
+WEATHER_API_KEY=your_weather_api_key_here
 ```
 
 ## 📝 Exercícios
@@ -97,7 +94,7 @@ TAVILY_API_KEY=your_tavily_key_here
 2. **Definir o Logistic Agent** com:
    - `name`: Nome identificativo do agente
    - `description`: Descrição clara das capacidades do agente
-   - `global_instruction`: Instruções gerais sobre o comportamento do agente
+   - `global_instruction`: Instruções gerais sobre o comportamento do agente e dos seus subagentes
    - `instruction`: Diretrizes específicas para execução de tarefas
    - `tools`: Ferramentas MCP dos servidores de voos e alojamentos
    - `model`: Modelo de linguagem (usar `LLM`)
@@ -182,6 +179,14 @@ Preciso de:
 
 response = await root_agent.run(query)
 print(response)
+```
+
+### Como utilizar a interface do ADK para testar os agentes
+
+Dentro da pasta `alunos/agentes`: 
+
+```bash
+adk web
 ```
 
 ## 📚 Recursos Adicionais

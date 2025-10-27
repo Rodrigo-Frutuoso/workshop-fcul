@@ -1,5 +1,5 @@
 import os
-from utils.loader import load_dataset
+from helpers.loader import load_dataset
 
 HEADERS_PLANES = ["name","iata","icao"]
 FILENAME_PLANES = "planes.dat"
