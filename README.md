@@ -60,8 +60,8 @@ O ficheiro de configuração está protegido por password no arquivo `_.env.zip`
 cd alunos
 
 # Criar ambiente virtual (recomendado)
-python -m venv .venv
-source .venv/bin/activate  # No Windows: .venv\Scripts\activate
+python -m venv workshop-fcul-venv
+source workshop-fcul-venv/bin/activate  # No Windows: workshop-fcul\Scripts\activate
 
 # Instalar dependências
 pip install -r requirements.txt

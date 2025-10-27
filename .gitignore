@@ -5,3 +5,5 @@ __pycache__/
 .vscode/
 instrutor/
 workshop-fcul/
+workshop-fcul-venv/
+venv/

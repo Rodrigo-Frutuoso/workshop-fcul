@@ -6,4 +6,4 @@ google-adk==1.16.0
 langchain-openai==1.0.1
 litellm==1.78.6
 mcp==1.18.0
-
+python-dotenv==1.2.1
