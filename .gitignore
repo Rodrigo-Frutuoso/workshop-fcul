@@ -3,7 +3,6 @@ __pycache__/
 *.pyc
 .DS_Store
 .vscode/
-instrutor/
 workshop-fcul/
 workshop-fcul-venv/
 venv/
